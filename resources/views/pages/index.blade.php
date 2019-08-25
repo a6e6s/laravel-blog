@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-
-    </head>
-    <body>
-        <h1>index </h1>
-    </body>
-</html>
+@extends('layouts.app')
+@section('content')
+    <div class="jumbotron text-center">
+        <h1 class="display-4">{{$title}}</h1>
+        <p class="lead">This is my blog </p>
+        <hr class="my-4">
+        <p>
+            <a href="/login" class="btn btn-primary" role="button">Login</a>
+            <a href="/register" class="btn btn-success" role="button">Register</a>
+        </p>
+    </div>
+@endsection
